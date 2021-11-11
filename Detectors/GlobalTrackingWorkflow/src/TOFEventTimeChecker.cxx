@@ -275,7 +275,7 @@ void TOFEventTimeChecker::init(InitContext& ic)
   mPMassvsPExpPi = new TProfile("PMassvsPExpPi", ";#it{p} (GeV/#it{c}); M(#beta_{exp}^{#pi}) [GeV/#it{c}^{2}]", 1000, 0., 5, 0., 2.);
   mPMassvsPExpKa = new TProfile("PMassvsPExpKa", ";#it{p} (GeV/#it{c}); M(#beta_{exp}^{K}) [GeV/#it{c}^{2}]", 1000, 0., 5, 0., 2.);
   mPMassvsPExpPr = new TProfile("PMassvsPExpPr", ";#it{p} (GeV/#it{c}); M(#beta_{exp}^{p}) [GeV/#it{c}^{2}]", 1000, 0., 5, 0., 2.);
-  mHTimevsResEvtimePi = new TH2F("HTimevsResEvtimePi", ";#sigma_{evtime};t_{TOF} - t_{exp}^{#pi} (ps)", 200, 0., 200, 500, -5000, 5000);
+  mHTimevsResEvtimePi = new TH2F("HTimevsResEvtimePi", ";TOF event time resolution (ps);t_{TOF} - t_{exp}^{#pi} (ps)", 200, 0., 200, 500, -5000, 5000);
 }
 
 void TOFEventTimeChecker::run(ProcessingContext& pc)
